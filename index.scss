@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flexbox;
+    flex-direction: column;
+}
+
+.summaries{
+    display: flexbox;
+    flex-direction: row;
+}
+
+.site{
+    min-width: 200px ;
+}
+
+.overveiw{
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.change{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 300px;
+    padding: 20px;
+    margin: 20PX;
+    border-radius: 10px;
+    background: burlywood;
+}
