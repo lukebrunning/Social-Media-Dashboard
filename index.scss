@@ -1,21 +1,47 @@
-$backgroundColour: darkblue;
-$boxColour: blue;
-$textColour: grey;
-
 *{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
 body{
-//    background-color: $backgroundColour;
+    background-color: var(--backgroundColour);
     padding-left: 5%;
     padding-right: 5%;
+    --backgroundColour: hsl(0, 0%, 100%);
+    --headerbackground: hsl(225, 100%, 98%);
+    --boxColour: hsl(227, 47%, 96%);
+    --lighttextColour: hsl(228, 12%, 44%);
+    --darktextColour: hsl(230, 17%, 14%);
+}
+
+body.dark {
+    --backgroundColour: hsl(230, 17%, 14%);
+    --headerbackground: hsl(232, 19%, 15%);
+    --boxColour: hsl(228, 28%, 20%);
+    --lighttextColour: hsl(228, 34%, 66%);
+    --darktextColour: hsl(0, 0%, 100%);
+}
+
+p1 {
+    font-size: 14px;
+}
+
+p2 {
+    font-size: 14px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: var(--headerbackground);
+
+    h1{
+        color: var(--darktextColour);
+    }
+
+    p1{
+        color: var(--lighttextColour);
+    }
 }
 
 
@@ -31,30 +57,48 @@ body{
     flex-wrap: wrap;
     align-items: center;
     margin: -20px;
+
+    h1{
+        color: var(--darktextColour);
+    }
+
+    p1{
+        color: var(--lighttextColour);
+    }
+
+    p2{
+        color: var(--lighttextColour);
+    }
 }
 
 .site{
     min-width: 250px;
     width: 20%;
+    flex-grow: 1;
     padding: 20px;
-    border-radius: 10px;
     margin: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .facebook{
-    //background-image: linear-gradient(hsl(208, 92%, 53%) 10px, $boxColour 10px);
+    background-image: linear-gradient(hsl(208, 92%, 53%) 5px, var(--boxColour) 5px);
 }
 
 .twitter{
-    //background-image: linear-gradient(hsl(203, 89%, 53%), $boxColour 10px);    
+    background-image: linear-gradient(hsl(203, 89%, 53%) 5px, var(--boxColour) 5px);    
 }
 
 .instagram{
-    //background-image: linear-gradient(linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%) 10px, $boxColour 10px);
+    background-image: linear-gradient(linear-gradient( hsl(37, 97%, 70%),hsl(329, 70%, 58%)) 5px, var(--boxColour) 5px);
 }
 
 .youtube{
-    //background-image: linear-gradient(hsl(348, 97%, 39%) 10px, $boxColour 10px);
+    background-image: linear-gradient(hsl(348, 97%, 39%) 5px, var(--boxColour) 5px);
+}
+
+.h2{
+    color: var(--darktextColour);
 }
 
 .overview{
@@ -76,7 +120,15 @@ body{
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-//    background-color: $boxColour;
+    background-color: var(--boxColour);
+
+    h1{
+        color: var(--darktextColour);
+    }
+
+    p1{
+        color: var(--lighttextColour);
+    }
 }
 
 .increase{

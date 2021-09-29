@@ -5,8 +5,30 @@
 }
 
 body {
+  background-color: var(--backgroundColour);
   padding-left: 5%;
   padding-right: 5%;
+  --backgroundColour: hsl(0, 0%, 100%);
+  --headerbackground: hsl(225, 100%, 98%);
+  --boxColour: hsl(227, 47%, 96%);
+  --lighttextColour: hsl(228, 12%, 44%);
+  --darktextColour: hsl(230, 17%, 14%);
+}
+
+body.dark {
+  --backgroundColour: hsl(230, 17%, 14%);
+  --headerbackground: hsl(232, 19%, 15%);
+  --boxColour: hsl(228, 28%, 20%);
+  --lighttextColour: hsl(228, 34%, 66%);
+  --darktextColour: hsl(0, 0%, 100%);
+}
+
+p1 {
+  font-size: 14px;
+}
+
+p2 {
+  font-size: 14px;
 }
 
 .header {
@@ -16,6 +38,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: var(--headerbackground);
+}
+
+.header h1 {
+  color: var(--darktextColour);
+}
+
+.header p1 {
+  color: var(--lighttextColour);
 }
 
 .container {
@@ -44,12 +75,48 @@ body {
   margin: -20px;
 }
 
+.summaries h1 {
+  color: var(--darktextColour);
+}
+
+.summaries p1 {
+  color: var(--lighttextColour);
+}
+
+.summaries p2 {
+  color: var(--lighttextColour);
+}
+
 .site {
   min-width: 250px;
   width: 20%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px;
-  border-radius: 10px;
   margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.facebook {
+  background-image: linear-gradient(#198ff5 5px, var(--boxColour) 5px);
+}
+
+.twitter {
+  background-image: linear-gradient(#1ca0f2 5px, var(--boxColour) 5px);
+}
+
+.instagram {
+  background-image: linear-gradient(linear-gradient(#fdc468, #df4996) 5px, var(--boxColour) 5px);
+}
+
+.youtube {
+  background-image: linear-gradient(#c4032a 5px, var(--boxColour) 5px);
+}
+
+.h2 {
+  color: var(--darktextColour);
 }
 
 .overview {
@@ -87,6 +154,15 @@ body {
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
+  background-color: var(--boxColour);
+}
+
+.change h1 {
+  color: var(--darktextColour);
+}
+
+.change p1 {
+  color: var(--lighttextColour);
 }
 
 .increase {
