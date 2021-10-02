@@ -18,15 +18,15 @@
 <body>
   <div class="header">
     <div class="title">
-      <h1>
-        Social Media Dashboard
-      </h1>
       <p1>
-        Total Followers: 23,004
+        Social Media Dashboard
       </p1>
+      <p2>
+        Total Followers: 23,004
+      </p2>
     </div>
     <div class="toggle">
-      <p1>Dark Mode</p1>
+      <p2>Dark Mode</p2>
       <label class="switch" >
         <input type="checkbox" onclick="darkmode()">
         <span class="slider round"></span>
@@ -36,7 +36,10 @@
   <div class="container">
     <div class="summaries">
       <div class="site facebook">
-          <p1><img src="images/icon-facebook.svg" alt="Facebook"> @nathanf</p1>
+        <div class="account">
+          <img src="images/icon-facebook.svg" alt="Facebook">
+          <p1>@nathanf</p1>
+        </div>
           <h1>1987</h1>
           <p2>Followers</p2><br>
           <p3 class="increase"><img src="images/icon-up.svg" alt="+"> 12 Today</p3>
@@ -60,6 +63,7 @@
         <p3 class="decrease"><img src="images/icon-down.svg" alt="-"> 144 Today</p3>
       </div>
     </div>
+    <br>
     <div class="h2">
       <h2>
         Overview - Today
@@ -98,7 +102,9 @@
       </div>
       <div class="change">
         <p1>Likes</p1>
-        <img src="images/icon-twitter.svg" alt="Twitter">
+        <div class="icon">
+          <img src="images/icon-twitter.svg" alt="Twitter">
+        </div>
         <h1>507</h1>
         <p2 class="increase"><img src="images/icon-up.svg" alt="+"> 553%</p2>     
       </div>
@@ -110,7 +116,9 @@
       </div>
       <div class="change">
         <p1>Total Views</p1>
-        <img src="images/icon-youtube.svg" alt="Youtube">
+        <div class="icon">
+          <img src="images/icon-youtube.svg" alt="Youtube">
+        </div>
         <h1>1407</h1>
         <p2 class="decrease"><img src="images/icon-down.svg" alt="-"> 12%</p2>
       </div>
